@@ -18,9 +18,14 @@ int main(){ //funcion principal del cualquier programa en c++.
             //Esta funcion como cualquier otra, empieza con una llave de apertura ( { ) y termina con una llave de cierre ( } )
             //Funciones anidan bloques de codigo, que se ejecutan en orden secuencial de arriba abajo. Y tienen una entrada de parametros ()
     
-    int salario; //declaracion de variable, es decir se reserva espacion en la RAM del ordenador,
-    salario = 3500; //  y inicializacion en otra linea
+    int salario = 3500; //declaracion de variable, es decir se reserva espacion en la RAM del ordenador, y inicializacion en  una misma linea
 
+    cout<<salario;//muestra en consola el valor de la variable salario
+
+    salario = 3850; //asignacion de un nuevo valor. Esto es posible debido a que salario es una variable y puede variar su valor durante la ejecucion del programa
+
+    cout<<salario;
+    
     return 0;
     //todas la funciones deben retornar un valor,exeptuando las void, en este caso la funcion main retorna un entero (int)
 }
