@@ -1,6 +1,6 @@
 /*
     Curos de c++ del canal pildoras informaticas.
-    Video 6 Tipos y variables 03/10/22
+    Video 7 Ejemplo sencillo 03/10/22
 */
 
 //A las lineas de codigo que lee el compilador se les llama declaraciones o sentencias
