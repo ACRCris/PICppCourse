@@ -18,8 +18,27 @@ int main(){ //funcion principal del cualquier programa en c++.
             //Esta funcion como cualquier otra, empieza con una llave de apertura ( { ) y termina con una llave de cierre ( } )
             //Funciones anidan bloques de codigo, que se ejecutan en orden secuencial de arriba abajo. Y tienen una entrada de parametros ()
     
-   
+    string nombre = "Juan"; //declaracion e inicializacion de variable de tipo string
+    
+    int edad {18}; //declaracion e inicializacion de tipo lista, de variable de tipo entero
 
+    double salario; //declaracion de variable de tipo double
+
+    cout<<"Introduce el salario de el empleado: "; //cout es una funcion de la libreria iostream que permite mostrar en consola
+    
+    cin>>salario; //cin es una funcion de la libreria iostream que permite leer de consola y almacenar en una variable de cualquier tipo, en este caso double
+
+    cout<<"Introduce la edad del empleado: ";
+
+    cin>>edad;
+
+    nombre = "Ana"; 
+
+    cout<<"--------------------------"<<endl;
+
+    cout<<"Datos del empleado: "<<endl;    
+
+    cout<<"Nombre: "<<nombre<<". Edad: "<<edad<<". Salario: "<<salario<<endl; //<< es el operador de insercion, permite concatenar valores de cualquier tipo  
 
     //todas la funciones deben retornar un valor,exeptuando las void, en este caso la funcion main retorna un entero (int).
 }
