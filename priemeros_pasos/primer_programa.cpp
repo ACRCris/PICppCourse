@@ -25,7 +25,7 @@ int main(){ //funcion principal del cualquier programa en c++.
     salario = 3850; //asignacion de un nuevo valor. Esto es posible debido a que salario es una variable y puede variar su valor durante la ejecucion del programa
 
     cout<<salario;
-    
+
     return 0;
-    //todas la funciones deben retornar un valor,exeptuando las void, en este caso la funcion main retorna un entero (int)
+    //todas la funciones deben retornar un valor,exeptuando las void, en este caso la funcion main retorna un entero (int).
 }
