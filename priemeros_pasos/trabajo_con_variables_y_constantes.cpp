@@ -18,7 +18,9 @@ int main(){ //funcion principal del cualquier programa en c++.
             //Esta funcion como cualquier otra, empieza con una llave de apertura ( { ) y termina con una llave de cierre ( } )
             //Funciones anidan bloques de codigo, que se ejecutan en orden secuencial de arriba abajo. Y tienen una entrada de parametros ()
     
-    const string nombre = "Juan"; //declaracion e inicializacion de una constante
+    const string nombre // declaracion de una constante pero sin inicilizacion, genera error debido a que una constante debe ser inicializada
+
+    nombre = "Juan"; //inicializacion de la constante nombre, genera error debido a que una constante no puede variar su valor durante la ejecucion del programa
     
     int edad {18}; //declaracion e inicializacion de tipo lista, de variable de tipo entero
 
