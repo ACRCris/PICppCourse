@@ -18,7 +18,7 @@ int main(){ //funcion principal del cualquier programa en c++.
             //Esta funcion como cualquier otra, empieza con una llave de apertura ( { ) y termina con una llave de cierre ( } )
             //Funciones anidan bloques de codigo, que se ejecutan en orden secuencial de arriba abajo. Y tienen una entrada de parametros ()
     
-    string nombre = "Juan"; //declaracion e inicializacion de variable de tipo string
+    const string nombre = "Juan"; //declaracion e inicializacion de una constante
     
     int edad {18}; //declaracion e inicializacion de tipo lista, de variable de tipo entero
 
@@ -32,7 +32,7 @@ int main(){ //funcion principal del cualquier programa en c++.
 
     cin>>edad;
 
-    nombre = "Ana"; 
+    //nombre = "Ana"; genera error  debido a que nombre es una constante y no puede variar su valor durante la ejecucion del programa
 
     cout<<"--------------------------"<<endl;
 
