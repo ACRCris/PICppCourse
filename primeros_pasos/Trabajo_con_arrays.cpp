@@ -16,7 +16,7 @@ int main(){
 
     //edades[1] = 45; //asignacion de un nuevo valor a un elemento del array
     
-    cin>>edades[1]; //asignacion de un nuevo valor a un elemento del array por consola
+    cin>>edades[1]; //asignacion de un nuevo valor a un elemento del array por consola.
 
     cout<<"La edad es de "<<edades[1]<<" años"<<endl;
 
