@@ -34,6 +34,7 @@ int main(){
     const double iva {0.21}; //...
 
     const int expira_presupuesto {30}; //...
+    
 
     cout<<"\nPresupuesto para la instalacion de pisos laminados"<<endl;
 
@@ -46,19 +47,22 @@ int main(){
     cout<<"Precio piso laminado calidad alta: "<<precio_calidad_alta<<"€"<<endl;
 
     cout<<" IMPORTE: ";
-    
-    cout<<(precio_calidad_media*metros_cuadrados_piso_calidad_media)+(precio_calidad_alta*metros_cuadrados_piso_calidad_alta)<<"€"<<endl; //comando para simbolos de euro alt+0128 
+
+    double subtotal_calidad_media = precio_calidad_media*metros_cuadrados_piso_calidad_media; 
+    double subtotal_calidad_alta = precio_calidad_alta*metros_cuadrados_piso_calidad_alta;
+    double subtotal = subtotal_calidad_media + subtotal_calidad_alta;
+
+    cout<<subtotal<<"€"<<endl; //comando para simbolos de euro alt+0128 
 
     cout<<" IVA: ";
 
-    cout<<((precio_calidad_media*metros_cuadrados_piso_calidad_media)+(precio_calidad_alta*metros_cuadrados_piso_calidad_alta))*iva<<"€"<<endl;
+    cout<<subtotal*iva<<"€"<<endl;
 
     cout<<"=========================================="<<endl;
 
     cout<<" IMPORTE TOTAL: ";
 
-    cout<<((precio_calidad_media*metros_cuadrados_piso_calidad_media)+(precio_calidad_alta*metros_cuadrados_piso_calidad_alta))*iva
-    +((precio_calidad_media*metros_cuadrados_piso_calidad_media)+(precio_calidad_alta*metros_cuadrados_piso_calidad_alta))<<"€"<<endl;
+    cout<<subtotal*(1+iva)<<"€"<<endl; 
 
     cout<<" presupuesto valido durante "<<expira_presupuesto<<" dias";
 
