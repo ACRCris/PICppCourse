@@ -8,9 +8,9 @@ using namespace std;// Uso de espacio de nombre std implicito en todo el codigo
 
 int main(){
 
-    int personas =10;
+    const int personas =10;
 
-    int edades[personas] = {15,20,25}; //Declaracion e inicializacion con tamaño de array definido por una variable puede generar errores de compilacion, dependiendo del compilador
+    int edades[personas] = {15,20,25}; //Declaracion e inicializacion con tamaño de array definido por una constante yo no causa error.
 
     cout<<edades[7]<<endl; //imprime en consola el valor 0
 
