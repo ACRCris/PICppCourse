@@ -8,7 +8,13 @@ using namespace std;// Uso de espacio de nombre std implicito en todo el codigo
 
 int main(){
 
-   
+    int matrix[] = {15,20,25};  //Declaracion e inicializacion de array de tipo entero sin especificar el tamaño del array
+                                //la indexacion de los elementos del array empieza en 0. 
+
+    cout<<matrix[1]<<endl;      //Muestra en consola el segundo elemento del array
+    
+    cout<<matrix[2]<<endl;      //Muestra en consola el tercer elemento del array
+
 
     return 0;
 
