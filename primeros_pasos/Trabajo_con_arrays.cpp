@@ -8,11 +8,13 @@ using namespace std;// Uso de espacio de nombre std implicito en todo el codigo
 
 int main(){
 
-    const int personas =10;
 
     int edades[personas] = {15,20,25}; //Declaracion e inicializacion con tamaño de array definido por una constante yo no causa error.
 
     cout<<edades[7]<<endl; //imprime en consola el valor 0
+
+    const int personas =10; //Causa error dado que la constante se esta usando anetes de declararse e inicializarse, pues el flujo de ejecucion es de arriba abajo
+
 
     return 0;   
 
