@@ -1,6 +1,6 @@
 /*
     Curos de c++ del canal pildoras informaticas.
-    Video 15 Vectores I 07/12/23
+    Video 15 Vectores II 22/12/23
 */
 
 #include <iostream> //Directiva de preprocesador include para incluir iostream libreria estandar de c++ que permite operaciones de entrada y salida
@@ -21,14 +21,6 @@ int main(){
 
     int i = 0;
 
-    while(i < records.size()){  //Bucle while es un bucle indeterminado, es decir que no se sabe cuantas veces se va a ejecutar.
-                                //Es util para recorrer vectores, ya que estos son dinamicos.
-                                //size() es un metodo de la clase vector que permite obtener el tamaño del vector
-                                
-        cout<<records[i]<<endl;
-
-        i++;
-    }
 
 
     return 0;
