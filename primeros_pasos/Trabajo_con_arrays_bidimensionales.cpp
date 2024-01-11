@@ -20,7 +20,7 @@ int main(){
 
             cin>>mi_matriz[fila][columna];
 
-        }//por cada entrada en el primer bucle for, este bucle for se ejecuta 5 veces.
+        }//por cada entrada en el primer bucle for, este bucle for se ejecuta 5 veces
     }
 
     cout<< "Visualizamos ahora los valores almacenados en el array"<<endl;
