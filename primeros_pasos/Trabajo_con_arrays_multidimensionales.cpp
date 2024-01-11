@@ -8,7 +8,14 @@ using namespace std;// Uso de espacio de nombre std implicito en todo el codigo
 
 int main(){
 
-    
+    //Se quiere crear un array multidimensional para guardar el numero de carros que pasaron en la horas el dias y meses.
+
+    int pasoCoches[24][31][12]; //array multidimensional de 3 dimensiones, 24 horas, 31 dias, 12 meses.
+
+    //15 de mayo a ls 2:00 
+    pasoCoches[2][14][4] = 4;
+
+    cout<<"El numero de carros que pasaron el 15 de mayo a las 2:00 es: "<<pasoCoches[2][14][4]<<endl;
 
     return 0;
 
