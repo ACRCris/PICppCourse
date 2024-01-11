@@ -19,10 +19,17 @@ int main(){
 
     vector <double> salario_base (350, 2125.50); //Declaracion e inicializacion del vector, asignado primero el tamaño y luego el valor por defecto de cada posicion del vector.
 
-    for (int i = 0; i <350; i++){   //se inicializa la variable i en 0, se evalua la condicion i < 5, si es verdadera se ejecuta el bloque de codigo y se incrementa i en 1.
-                                    //El bucle for es un bucle determinado, es decir que se conoce el numero de iteraciones que se van a realizar.
-        cout<<salario_base[i]<<endl; 
+    int i = 0;
+
+    while(i < records.size()){  //Bucle while es un bucle indeterminado, es decir que no se sabe cuantas veces se va a ejecutar.
+                                //Es util para recorrer vectores, ya que estos son dinamicos.
+                                //size() es un metodo de la clase vector que permite obtener el tamaño del vector.
+                                
+        cout<<records[i]<<endl;
+
+        i++;
     }
+
 
     return 0;
 
