@@ -21,7 +21,7 @@ int main(){
 
     int i = 0;
 
-    cout<<records[7]<<endl; //Cuando se intenta acceder a una posicion de un vector que no existe al igual que con los arrays, se obtiene un comportamiento indefinido(Undefined behavior).
+    cout<<records.at(3); //Es casi equivalente a records[3], pero at() permite comprobar que el indice no se salga del rango del vector, si se sale del rango genera un error.
 
 
 
