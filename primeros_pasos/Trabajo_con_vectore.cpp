@@ -23,7 +23,7 @@ int main(){
 
     while(i < records.size()){  //Bucle while es un bucle indeterminado, es decir que no se sabe cuantas veces se va a ejecutar.
                                 //Es util para recorrer vectores, ya que estos son dinamicos.
-                                //size() es un metodo de la clase vector que permite obtener el tamaño del vector.
+                                //size() es un metodo de la clase vector que permite obtener el tamaño del vector
                                 
         cout<<records[i]<<endl;
 
