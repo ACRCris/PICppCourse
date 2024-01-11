@@ -21,10 +21,7 @@ int main(){
 
     int i = 0;
 
-    cout<<records.at(3); //Es casi equivalente a records[3], pero at() permite comprobar que el indice no se salga del rango del vector, si se sale del rango genera un error.
-
-
-
+    cout<<records.at(7)<<endl; //Dado que at realiza una comprobacion de rango de la posicion del vector, esto genera un error en tiempo de ejecucion, el programa arroja una excepcion.
 
 
     return 0;
