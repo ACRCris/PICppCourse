@@ -10,12 +10,18 @@ using namespace std;// Uso de espacio de nombre std implicito en todo el codigo
 
 int main(){
 
-    vector <int> records;   //Declaracion de un vector de tipo int, si generea es por que se necesita incluir la libreria vector.
+    vector <int> records(5);   //Declaracion de un vector de tipo int, si generea es por que se necesita incluir la libreria vector.
                             //Se declaran con la palabra reservada vector seguido de <tipo de dato> y el nombre del vector.
                             //Los vectores son dinamicos, es decir que se pueden modificar su tamaño en tiempo de ejecucion.
-                            //Cuando no se especifica el tamaño del vector esto son vacios, es decir que no tienen elementos.
-                            
-    vector <char> letras;   //Declaracion de un vector de tipo char.
+                            //Cuando al vector se le asigna un tamaño, se le asigna un espacio en memoria contiguo, todos con valores 0.
+
+    vector <char> letras(10);   //Declaracion de un vector de tipo char y en este caso almacena por defecto un caracter indeterminado en las 10 posiciones del vector.
+
+    for (int i = 0; i < 5; i++){//se inicializa la variable i en 0, se evalua la condicion i < 5, si es verdadera se ejecuta el bloque de codigo y se incrementa i en 1.
+
+        cout<<records[i]<<endl; //imprime en consola el valor 0.
+
+    }
 
     return 0;
 
