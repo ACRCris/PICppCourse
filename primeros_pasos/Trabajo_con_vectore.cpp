@@ -34,10 +34,13 @@ int main(){
 
     vector <int> records(elementos); 
 
+    int nuevo_elemento;
+
     for(int i=0; i<elementos; i++){// //se inicializa la variable i en 0, se evalua la condicion i < records.size(), si es verdadera se ejecuta el bloque de codigo y se incrementa i en 1.
                                                 // inicializacion                             condicion                                 incremento
         cout<<"Introduce el elemento del vector: "<<i<<": ";
-        cin>>records[i];
+        cin>>nuevo_elemento;
+        records.push_back(nuevo_elemento); //Metodo push_back() de la clase vector que permite agregar un elemento al final del vector.
 
     }
 
@@ -45,7 +48,7 @@ int main(){
 
     for(int i=0; i<elementos; i++){
 
-        cout<<records[i]<<endl;
+        cout<<records.at(i)<<endl;
 
     }
     
