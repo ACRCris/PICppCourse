@@ -24,7 +24,7 @@ int main(){
         }
     }//Al largo de este bucle anidado se realiza 24*31*12 = 8928 iteraciones.
 
-    cout<<"El numero de carros que pasaron el 7 de noviembre a las 19:00 es: "<<pasoCoches[19][6][15000]<<endl;//Undefined behavior no se ha declarado esa pociocion del array multidimensional, por lo que se obtiene un comportamiento indefinido y puede dar lugar a cualquier error.
+    cout<<"El numero de carros que pasaron el 7 de noviembre a las 19:00 es: "<<pasoCoches[19][6][10]<<endl;//Undefined behavior no se ha declarado esa pociocion del array multidimensional, por lo que se obtiene un comportamiento indefinido y puede dar lugar a cualquier error.
 
     return 0;
 
