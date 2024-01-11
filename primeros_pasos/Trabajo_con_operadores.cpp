@@ -16,7 +16,7 @@ int main(){
 
     int c=30;
 
-    double media=(a+b+c)/3; //Ejemplo de la division no entera, de la suma de almenos un double y un int, el resultado es un double, pues es el tipo de dato mas espacioso y preciso.
+    double media=(a+b+c)/3; //Ejemplo de la division no entera, de la suma de almenos un double y un int, el resultado es un double, pues es el tipo de dato mas espacioso y preciso
 
     cout<<"La media de los 3 valores es: "<<media<<endl;
 
