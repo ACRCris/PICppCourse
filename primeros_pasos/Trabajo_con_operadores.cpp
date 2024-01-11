@@ -14,23 +14,22 @@ int main(){
 
     int b=10;
 
-    a += b; // es operador de asignacion equivalente a a = a + b;
+    int c=5;
+
+    int z=++a;//Preincremento, primero se incrementa el valor de a y luego se asigna a z
+
+    cout<<"El valor de z es: "<<z<<endl;
 
     cout<<"El valor de a es: "<<a<<endl;
 
-    a -= b; // es operador de asignacion equivalente a a = a - b;
+    int w = b++; //Postincremento, primero se asigna el valor de b a w y luego se incrementa el valor de b
 
-    cout<<"El valor de a es: "<<a<<endl;
+    cout<<"El valor de w es: "<<w<<endl;
 
-    a *= b; // es operador de asignacion equivalente a a = a * b;
-
-    cout<<"El valor de a es: "<<a<<endl;
-
-    a /= b; // es operador de asignacion equivalente a a = a / b;
-    
-
+    cout<<"El valor de b es: "<<b<<endl;
     
     return 0;
+
 
 
     /*
