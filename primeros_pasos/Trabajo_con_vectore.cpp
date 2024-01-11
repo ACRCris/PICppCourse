@@ -1,6 +1,6 @@
 /*
     Curos de c++ del canal pildoras informaticas.
-    Video 15 Vectores II 22/12/23
+    Video 16 Vectores II 22/12/23
 */
 
 #include <iostream> //Directiva de preprocesador include para incluir iostream libreria estandar de c++ que permite operaciones de entrada y salida
@@ -19,38 +19,36 @@ int main(){
     
     */ 
 
-    vector <int> records;   //Declaracion de un vector de tipo int, si generea es por que se necesita incluir la libreria vector.
+    //vector <int> records;  //Declaracion de un vector de tipo int, si generea es por que se necesita incluir la libreria vector.
                             //Se declaran con la palabra reservada vector seguido de <tipo de dato> y el nombre del vector.
                             //Los vectores son dinamicos, es decir que se pueden modificar su tamaño en tiempo de ejecucion.
                             //Cuando al vector se le asigna un tamaño, se le asigna un espacio en memoria contiguo, todos con valores 0.
 
    
-    int size {0}; 
 
-    cout<<"¿Cuantos valores desea almacenar en el vector?: ";
+    cout<<"¿Cuántos valores quieres que tenga el vector?: ";
 
-    cin>>size;
+    int elementos=0;
 
-    cout<<"Ingrese los valores a almacenar en el vector: "<<endl;
+    cin>>elementos;
 
-    int aux {0};
-    while(aux < size){// Bucle indeterminado, se ejecuta mientras la condicion sea verdadera.1
+    vector <int> records(elementos); 
 
-        cout<<"Ingrese el valor almacenado en la posicion "<<aux<<": ";
-        int value;
-        cin>>value;
-        records.push_back(value); //metodo push_back de la clase vector, permite agregar un elemento al final del vector.
-        aux++;
-    }
-    cout<<"\n======================================================================================" <<endl;
-    cout<<"\nLos valores almacenados en el vector son: "<<endl;
+    for(int i=0; i<elementos; i++){// //se inicializa la variable i en 0, se evalua la condicion i < records.size(), si es verdadera se ejecuta el bloque de codigo y se incrementa i en 1.
+                                                // inicializacion                             condicion                                 incremento
+        cout<<"Introduce el elemento del vector: "<<i<<": ";
+        cin>>records[i];
 
-    //foerach loop
-    for(int value: records){ //for each loop, permite iterar sobre cada elemento de un vector, en este caso se itera sobre cada elemento del vector my_vector y se almacena en la variable value.
-        cout<<value<<" ";
     }
 
-    cout<<endl;
+    cout<<"A continuacion te muestro los elementos almacenados en el vector: "<<endl;
+
+    for(int i=0; i<elementos; i++){
+
+        cout<<records[i]<<endl;
+
+    }
+    
     
     
 
