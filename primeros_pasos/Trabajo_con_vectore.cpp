@@ -19,13 +19,14 @@ int main(){
 
     vector <double> salario_base (350, 2125.50); //Declaracion e inicializacion del vector, asignado primero el tamaño y luego el valor por defecto de cada posicion del vector.
 
-    int i = 0;
+    records.push_back(105); //Se agrega un nuevo elemento al final del vector.
 
-    records.at(8) =105; //Genera una excepcion.
+    for (int i = 0; i < records.size(); i++){   //se inicializa la variable i en 0, se evalua la condicion i < records.size(), si es verdadera se ejecuta el bloque de codigo y se incrementa i en 1.
+                                                // inicializacion                             condicion                                 incremento
+        cout<<records.at(i)<<endl;  
 
-    cout<<records.at(3); //Dado que at realiza una comprobacion de rango de la posicion del vector, esto genera un error en tiempo de ejecucion, el programa arroja una excepcion.
-
-
+    } 
+    
     return 0;
 
 
