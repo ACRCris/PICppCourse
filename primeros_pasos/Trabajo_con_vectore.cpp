@@ -21,7 +21,7 @@ int main(){
 
     int i = 0;
 
-    records.at(3) =105;
+    records.at(8) =105; //Genera una excepcion.
 
     cout<<records.at(3); //Dado que at realiza una comprobacion de rango de la posicion del vector, esto genera un error en tiempo de ejecucion, el programa arroja una excepcion.
 
