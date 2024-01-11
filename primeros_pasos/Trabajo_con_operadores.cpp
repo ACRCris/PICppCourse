@@ -11,22 +11,14 @@ using namespace std;// Uso de espacio de nombre std implicito en todo el codigo
 int main(){ 
 
     int a=3;
-
-    float b=4.0f;
-
-    double c=8.0;
-
-    auto resultado = a+b; //auto es una palabra reservada que permite que el compilador infiera el tipo de dato de la variable resultado, en este caso es un float
-
-    cout<<typeid(resultado).name()<<endl; //typeid es una funcion que permite obtener el tipo de dato de una variable
     
-    auto resultado2 = a+c;
+    int b=20;
 
-    cout<<typeid(resultado2).name()<<endl;
+    int c=30;
 
-    auto resultado3 = a+a;
+    double media=(a+b+c)/3; //La division es entera, por lo que el resultado sera 17 un entero.
 
-    cout<<typeid(resultado3).name()<<endl;
+    cout<<"La media de los 3 valores es: "<<media<<endl;
     /*
         C++ No es WORA (Write Once Run Anywhere) como Java, es decir que la ejecuion de un programa en c++ depende de la arquitectura del computador
         C++ a diferencia de JAVA no maneja la excepcion ArrayIndexOutOfBoundsException, por lo que si se intenta acceder a una posicion de un array que sea declarado se obtendra los que se conoce como udnefined behavior.
