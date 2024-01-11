@@ -16,11 +16,12 @@ int main(){
                                         //Cuando al vector se le asigna un tamaño, se le asigna un espacio en memoria contiguo, todos con valores 0.
 
     vector <char> letras {'z','w','r'};   //Declaracion e inicializacion de tipo lista de un vector de tipo char y en este caso almacena por defecto un caracter indeterminado en las 10 posiciones del vector.
-    
 
-    for (int i = 0; i <3; i++){//se inicializa la variable i en 0, se evalua la condicion i < 5, si es verdadera se ejecuta el bloque de codigo y se incrementa i en 1.
+    vector <double> salario_base (350, 2125.50); //Declaracion e inicializacion del vector, asignado primero el tamaño y luego el valor por defecto de cada posicion del vector.
 
-        cout<<records[i]<<endl; //imprime en consola los valores almacenados en el vector letras en la posicion i.
+    for (int i = 0; i <350; i++){   //se inicializa la variable i en 0, se evalua la condicion i < 5, si es verdadera se ejecuta el bloque de codigo y se incrementa i en 1.
+                                    //El bucle for es un bucle determinado, es decir que se conoce el numero de iteraciones que se van a realizar.
+        cout<<salario_base[i]<<endl; 
     }
 
     return 0;
