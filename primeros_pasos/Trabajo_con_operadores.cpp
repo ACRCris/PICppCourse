@@ -25,7 +25,7 @@ int main(){
         Pues si un numero es p no es primo entonces existen a,b tales que p = a*b, por lo que a y b no pueden ser mayores que la raiz cuadrada de p
         Si a y b fueran mayores que la raiz cuadrada de p, entonces a*b seria mayor que p, lo cual es una contradiccion, es decir 
         al menos uno de los dos numero debe ser menor o igual que la raiz cuadrada de p, por lo que si no se encuentra un divisor de p menor o igual
-        que la raiz cuadrada de p, entonces p es primo.*/
+        que la raiz cuadrada de p, entonces p es primo*/
 
         if(num%i==0){//Operador modulo %, devuelve el resto de la division entera de dos numeros
 
