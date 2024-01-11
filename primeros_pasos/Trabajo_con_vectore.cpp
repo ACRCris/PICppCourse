@@ -17,9 +17,9 @@ int main(){
 
     vector <char> letras(10);   //Declaracion de un vector de tipo char y en este caso almacena por defecto un caracter indeterminado en las 10 posiciones del vector.
 
-    for (int i = 0; i < 5; i++){//se inicializa la variable i en 0, se evalua la condicion i < 5, si es verdadera se ejecuta el bloque de codigo y se incrementa i en 1.
+    for (int i = 0; i < 10; i++){//se inicializa la variable i en 0, se evalua la condicion i < 5, si es verdadera se ejecuta el bloque de codigo y se incrementa i en 1.
 
-        cout<<records[i]<<endl; //imprime en consola el valor 0.
+        cout<<letras[i]<<endl; //imprime en consola un caracter indeterminado para cada posicion del vector letras.
 
     }
 
