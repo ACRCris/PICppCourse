@@ -10,6 +10,24 @@ using namespace std;// Uso de espacio de nombre std implicito en todo el codigo
 
 int main(){ 
 
+    int a=5;
+
+    int b=10;
+
+    a += b; // es operador de asignacion equivalente a a = a + b;
+
+    cout<<"El valor de a es: "<<a<<endl;
+
+    a -= b; // es operador de asignacion equivalente a a = a - b;
+
+    cout<<"El valor de a es: "<<a<<endl;
+
+    a *= b; // es operador de asignacion equivalente a a = a * b;
+
+    cout<<"El valor de a es: "<<a<<endl;
+
+    a /= b; // es operador de asignacion equivalente a a = a / b;
+    
 
     
     return 0;
