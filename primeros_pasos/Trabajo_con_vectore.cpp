@@ -10,22 +10,52 @@ using namespace std;// Uso de espacio de nombre std implicito en todo el codigo
 
 int main(){
 
-    vector <int> records{25,45,60,35};  //Declaracion e inicializacion de tipo lista de un vector de tipo int, si generea es por que se necesita incluir la libreria vector.
-                                        //Se declaran con la palabra reservada vector seguido de <tipo de dato> y el nombre del vector.
-                                        //Los vectores son dinamicos, es decir que se pueden modificar su tamaño en tiempo de ejecucion.
-                                        //Cuando al vector se le asigna un tamaño, se le asigna un espacio en memoria contiguo, todos con valores 0.
+    /*
+    Ejercicio
 
-    vector <char> letras {'z','w','r'};   //Declaracion e inicializacion de tipo lista de un vector de tipo char y en este caso almacena por defecto un caracter indeterminado en las 10 posiciones del vector.
+    Crear un vector incialmente vacio y perdir por consola cuantos valores se desa almacenar en el vector.
+    Luego pedir por consola los valores y almacenarlos en el vector.
+    Mostrar en consola los valores almacenados en el vector.
+    
+    */ 
 
-    vector <double> salario_base (350, 2125.50); //Declaracion e inicializacion del vector, asignado primero el tamaño y luego el valor por defecto de cada posicion del vector.
+    vector <int> records;   //Declaracion de un vector de tipo int, si generea es por que se necesita incluir la libreria vector.
+                            //Se declaran con la palabra reservada vector seguido de <tipo de dato> y el nombre del vector.
+                            //Los vectores son dinamicos, es decir que se pueden modificar su tamaño en tiempo de ejecucion.
+                            //Cuando al vector se le asigna un tamaño, se le asigna un espacio en memoria contiguo, todos con valores 0.
 
-    records.push_back(105); //Se agrega un nuevo elemento al final del vector.
+   
+    int size {0}; 
 
-    for (int i = 0; i < records.size(); i++){   //se inicializa la variable i en 0, se evalua la condicion i < records.size(), si es verdadera se ejecuta el bloque de codigo y se incrementa i en 1.
-                                                // inicializacion                             condicion                                 incremento
-        cout<<records.at(i)<<endl;  
+    cout<<"¿Cuantos valores desea almacenar en el vector?: ";
 
-    } 
+    cin>>size;
+
+    cout<<"Ingrese los valores a almacenar en el vector: "<<endl;
+
+    int aux {0};
+    while(aux < size){// Bucle indeterminado, se ejecuta mientras la condicion sea verdadera.1
+
+        cout<<"Ingrese el valor almacenado en la posicion "<<aux<<": ";
+        int value;
+        cin>>value;
+        records.push_back(value); //metodo push_back de la clase vector, permite agregar un elemento al final del vector.
+        aux++;
+    }
+    cout<<"\n======================================================================================" <<endl;
+    cout<<"\nLos valores almacenados en el vector son: "<<endl;
+
+    //foerach loop
+    for(int value: records){ //for each loop, permite iterar sobre cada elemento de un vector, en este caso se itera sobre cada elemento del vector my_vector y se almacena en la variable value.
+        cout<<value<<" ";
+    }
+
+    cout<<endl;
+    
+    
+
+
+
     
     return 0;
 
