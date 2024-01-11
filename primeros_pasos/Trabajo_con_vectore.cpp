@@ -21,6 +21,10 @@ int main(){
 
     int i = 0;
 
+    cout<<records[7]<<endl; //Cuando se intenta acceder a una posicion de un vector que no existe al igual que con los arrays, se obtiene un comportamiento indefinido(Undefined behavior).
+
+
+
 
 
     return 0;
