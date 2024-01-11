@@ -10,28 +10,36 @@ using namespace std;// Uso de espacio de nombre std implicito en todo el codigo
 
 int main(){ 
 
-    int a=5;
-
-    int b=10;
-
-    int c=5;
-
-    int z=++a;//Preincremento, primero se incrementa el valor de a y luego se asigna a z
-
-    cout<<"El valor de z es: "<<z<<endl;
-
-    cout<<"El valor de a es: "<<a<<endl;
-
-    int w = b++; //Postincremento, primero se asigna el valor de b a w y luego se incrementa el valor de b
-
-    cout<<"El valor de w es: "<<w<<endl;
-
-    cout<<"El valor de b es: "<<b<<endl;
     
-    return 0;
+    int num;
+
+    bool es_primo=true;
+
+    cout<<"Introduce un numero: ";
+
+    cin>>num;
+
+    for (int i = 2; i < num/2; i++) {
+
+        if(num%i==0){//Operador modulo %, devuelve el resto de la division entera de dos numeros
+
+            es_primo=false;
+            break;// Operador break, permite salir de un bucle 
+
+        }
+    }
+
+    if(es_primo){
+
+        cout<<"El numero "<<num<<" es primo"<<endl;
+
+    }else{
 
 
+        cout<<"El numero "<<num<<" no es primo"<<endl;
 
+    }
+    
     /*
         C++ No es WORA (Write Once Run Anywhere) como Java, es decir que la ejecuion de un programa en c++ depende de la arquitectura del computador
         C++ a diferencia de JAVA no maneja la excepcion ArrayIndexOutOfBoundsException, por lo que si se intenta acceder a una posicion de un array que sea declarado se obtendra los que se conoce como udnefined behavior.
