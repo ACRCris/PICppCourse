@@ -40,7 +40,7 @@ int main(){
                                                 // inicializacion                             condicion                                 incremento
         cout<<"Introduce el elemento del vector: "<<i<<": ";
         cin>>nuevo_elemento;
-        records.push_back(nuevo_elemento); //Metodo push_back() de la clase vector que permite agregar un elemento al final del vector.
+        records.push_back(nuevo_elemento); //Metodo push_back() de la clase vector que permite agregar un elemento al final del vector
 
     }
 
