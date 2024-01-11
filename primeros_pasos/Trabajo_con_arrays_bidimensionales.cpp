@@ -1,6 +1,6 @@
 /*
     Curos de c++ del canal pildoras informaticas.
-    Video 14 Arrays bidimensionales 16/12/22
+    Video 13 Arrays bidimensionales 16/12/22
 */
 
 #include <iostream> //Directiva de preprocesador include para incluir iostream libreria estandar de c++ que permite operaciones de entrada y salida
