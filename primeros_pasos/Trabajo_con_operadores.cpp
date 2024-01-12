@@ -25,7 +25,7 @@ int main(){
 
         cout<<"tienes la edad suficiente para sacarte el carnet"<<endl;
 
-    }//Equivalente al codigo anterior.
+    }//Equivalente al codigo anterior
 
     /*
         C++ No es WORA (Write Once Run Anywhere) como Java, es decir que la ejecuion de un programa en c++ depende de la arquitectura del computador
