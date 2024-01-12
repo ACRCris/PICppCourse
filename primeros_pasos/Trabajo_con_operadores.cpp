@@ -12,18 +12,26 @@ int main(){
 
     int edad;
 
+    string ex_medico;
+
     cout<<"Por favor introduce tu edad: ";
 
     cin>>edad;
 
-    if(edad>=18){ //if es un condicional que permite ejecutar un bloque de codigo si se cumple la condicion, alterando el flujo de ejecucion del programa
+    cout<<"Has pasado el examen medico? (si/no): ";
 
-        cout<<"Tienes la edad suficiente para sacarte el carnet"<<endl;
+    cin>>ex_medico;
+
+    if(edad>=18 && ex_medico == "si"){  //if es un condicional que permite ejecutar un bloque de codigo si se cumple la condicion, alterando el flujo de ejecucion del programa
+                                        //&& es un operador logico que evalua si se cumplen dos condiciones a la vez
+                                        //El programa no funciona bien pues si el usario ingresa "si" escrito de una forma diferente a la que se espera el programa no lo reconoce, para solucionar esto se puede usar la funcion toLowerCase() de la clase string para convertir el string a minusculas y luego compararlo con "si"
+
+        cout<<"Puedes obtener el carnet"<<endl;
  
     }else{  //else (en otro caso) se ejecuta si no se cumple la condicion del if
             //sirve para evaluar la condicion contraria a la del if, es decir si no es necesario evaluar la condicion contraria se puede omitir el else
 
-        cout<<"No tienes la edad suficiente para sacarte el carnet"<<endl;
+        cout<<"No cumples los requisitos"<<endl;
 
     }//Equivalente al codigo anterior
 
