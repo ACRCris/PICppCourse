@@ -16,14 +16,14 @@ int main(){
 
     cin>>edad;
 
-    if(edad<18){ //if es un condicional que permite ejecutar un bloque de codigo si se cumple la condicion, alterando el flujo de ejecucion del programa
+    if(edad>=18){ //if es un condicional que permite ejecutar un bloque de codigo si se cumple la condicion, alterando el flujo de ejecucion del programa
 
-        cout<<"No tienes la edad suficiente para sacarte el carnet"<<endl;
+        cout<<"Tienes la edad suficiente para sacarte el carnet"<<endl;
  
     }else{  //else (en otro caso) se ejecuta si no se cumple la condicion del if
             //sirve para evaluar la condicion contraria a la del if, es decir si no es necesario evaluar la condicion contraria se puede omitir el else
 
-        cout<<"tienes la edad suficiente para sacarte el carnet"<<endl;
+        cout<<"No tienes la edad suficiente para sacarte el carnet"<<endl;
 
     }//Equivalente al codigo anterior
 
