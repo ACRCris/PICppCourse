@@ -1,6 +1,6 @@
 /*
     Curos de c++ del canal pildoras informaticas.
-    Video 19 Operadores y condicional IF I 28/03/23
+    Video 20 Operadores y condicional IF II 10/04/23
 */
 
 #include <iostream> //Directiva de preprocesador include para incluir iostream libreria estandar de c++ que permite operaciones de entrada y salida
@@ -46,7 +46,7 @@ int main(){
 
         cout<<"No cumples los requisitos"<<endl;
 
-    }//Equivalente al codigo anterior
+    }//Equivalente al codigo anterior.
 
     /*
         C++ No es WORA (Write Once Run Anywhere) como Java, es decir que la ejecuion de un programa en c++ depende de la arquitectura del computador
