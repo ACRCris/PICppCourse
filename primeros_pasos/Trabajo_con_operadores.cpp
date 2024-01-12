@@ -10,7 +10,22 @@ using namespace std;// Uso de espacio de nombre std implicito en todo el codigo
 
 int main(){ 
 
-    
+    int edad;
+
+    cout<<"Por favor introduce tu edad: ";
+
+    cin>>edad;
+
+    if(edad>=18){ //if es un condicional que permite ejecutar un bloque de codigo si se cumple la condicion, alterando el flujo de ejecucion del programa
+
+        cout<<"Tienes la edad suficiente para sacarte el carnet"<<endl;
+ 
+    }else{  //else (en otro caso) se ejecuta si no se cumple la condicion del if
+            //sirve para evaluar la condicion contraria a la del if, es decir si no es necesario evaluar la condicion contraria se puede omitir el else
+
+        cout<<"No tienes la edad suficiente para sacarte el carnet"<<endl;
+
+    }
 
     /*
         C++ No es WORA (Write Once Run Anywhere) como Java, es decir que la ejecuion de un programa en c++ depende de la arquitectura del computador
