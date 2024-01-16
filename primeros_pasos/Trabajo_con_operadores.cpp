@@ -11,21 +11,24 @@ using namespace std;// Uso de espacio de nombre std implicito en todo el codigo
 
 int main(){ 
 
-    int edad;
+    /*
+    Se da beca si su calificacion es superior a 8 o
+    si su distancia del domicilio al centro es superior a 20km
+    */
 
-    string ex_medico;
+    int calificacion, distancia_centro;
 
-    cout<<"Por favor introduce tu edad: ";
+    cout<<"Por favor introduce la calificacion: ";
 
-    cin>>edad;
+    cin>>calificacion;
 
-    cout<<"Has pasado el examen medico? (si/no): ";
+    cout<<"Por favor introduce la distancia al centro: ";
 
-    cin>>ex_medico;
+    cin>>distancia_centro;
 
-    if(edad>=18 && ex_medico == "si"){  //if es un condicional que permite ejecutar un bloque de codigo si se cumple la condicion, alterando el flujo de ejecucion del programa
-                                        //&& es un operador logico que evalua si se cumplen dos condiciones a la vez
-                                        //El programa no funciona bien pues si el usario ingresa "si" escrito de una forma diferente a la que se espera el programa no lo reconoce, para solucionar esto se puede usar la funcion toLowerCase() de la clase string para convertir el string a minusculas y luego compararlo con "si"
+
+    if(calificacion > 8 || distancia_centro > 20){  //if es un condicional que permite ejecutar un bloque de codigo si se cumple la condicion, alterando el flujo de ejecucion del programa
+                                                    //|| es el operador logico OR, se evalua la condicion que evalua si almenos una de las condiciones es verdadera                              
 
         cout<<"Puedes obtener el carnet"<<endl;
  
