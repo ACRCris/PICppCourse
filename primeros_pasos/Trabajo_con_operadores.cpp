@@ -33,7 +33,7 @@ int main(){
 
 
     if(calificacion > 8 || (distancia_centro > 20 && ingresos_familiares < 20000)){   //if es un condicional que permite ejecutar un bloque de codigo si se cumple la condicion, alterando el flujo de ejecucion del programa
-                                                                                    //|| es el operador logico OR, se evalua la condicion que evalua si almenos una de las condiciones es verdadera                              
+                                                                                    //|| es el operador logico OR, se evalua la condicion que evalua si almenos una de las condiciones es verdadera.                              
 
         cout<<"Puedes obtener el carnet"<<endl;
  
