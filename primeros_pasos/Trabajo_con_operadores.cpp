@@ -13,10 +13,11 @@ int main(){
 
     /*
     Se da beca si su calificacion es superior a 8 o
-    si su distancia del domicilio al centro es superior a 20km
+    si su distancia del domicilio al centro es superior a 20km ademas los ingresos familiares deben ser inferiores a 20.000€
     */
 
-    int calificacion, distancia_centro;
+    int calificacion, distancia_centro, ingresos_familiares;
+
 
     cout<<"Por favor introduce la calificacion: ";
 
@@ -26,9 +27,13 @@ int main(){
 
     cin>>distancia_centro;
 
+    cout<<"Por favor introduce los ingresos familiares: ";
 
-    if(calificacion > 8 || distancia_centro > 20){  //if es un condicional que permite ejecutar un bloque de codigo si se cumple la condicion, alterando el flujo de ejecucion del programa
-                                                    //|| es el operador logico OR, se evalua la condicion que evalua si almenos una de las condiciones es verdadera                              
+    cin>>ingresos_familiares;
+
+
+    if(calificacion > 8 || (distancia_centro > 20 && ingresos_familiares < 20000)){   //if es un condicional que permite ejecutar un bloque de codigo si se cumple la condicion, alterando el flujo de ejecucion del programa
+                                                                                    //|| es el operador logico OR, se evalua la condicion que evalua si almenos una de las condiciones es verdadera                              
 
         cout<<"Puedes obtener el carnet"<<endl;
  
