@@ -8,16 +8,6 @@
 #include <math.h> //Directiva de preprocesador include para incluir math.h libreria estandar de c++ que permite operaciones matematicas
 using namespace std;// Uso de espacio de nombre std implicito en todo el codigo
 
-void toLowerCase(string &cadena){   //Funcion que convierte un string a minusculas
-                                    //& se usa antes de una variable para pasarla por referencia, lo que permite modificarla dentro de la funcion sin necesidad de retornarla
-
-    for(int i=0; i<cadena.length(); i++){ //length() es un metodo de la clase string que devuelve la longitud de la cadena
-
-        cadena[i] = tolower(cadena[i]); //tolower() es una funcion de la libreria cctype que convierte un caracter a minuscula
-
-    }
-
-}
 
 int main(){ 
 
@@ -32,8 +22,6 @@ int main(){
     cout<<"Has pasado el examen medico? (si/no): ";
 
     cin>>ex_medico;
-
-    toLowerCase(ex_medico); //Se llama a la funcion toLowerCase() para convertir el string a minusculas
 
     if(edad>=18 && ex_medico == "si"){  //if es un condicional que permite ejecutar un bloque de codigo si se cumple la condicion, alterando el flujo de ejecucion del programa
                                         //&& es un operador logico que evalua si se cumplen dos condiciones a la vez
