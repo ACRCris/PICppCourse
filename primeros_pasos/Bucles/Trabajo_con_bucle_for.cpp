@@ -9,5 +9,11 @@ using namespace std;
 
 int main(){
 
+    for(int i=0; i<10; i++){    //La sintaxis del bucle for es la siguiente: for(inicializacion; condicion; incremento){codigo a ejecutar}
+                                
+        cout<<"Hola Alumnos"<<i<<endl;
+    
+    }
+
     return 0;
 }
