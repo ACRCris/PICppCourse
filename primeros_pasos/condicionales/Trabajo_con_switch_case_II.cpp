@@ -17,7 +17,7 @@ int main(){
 
     switch(idioma){
         case 'E': 
-        case 'e': //Evalua la misma condicion que el case anterior, es decir, si idioma es igual a 'E' o 'e' se ejecuta el codigo de este case
+        case 'e': //Evalua la misma condicion que el case anterior, es decir, si idioma es igual a 'E' o 'e' se ejecuta el codigo de este case.
                 cout<<"Seleccione la categoria (L: Libros, R: Ropa, T: Tecnologia)"<<endl;
                 cin>>categoria;
 
