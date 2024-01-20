@@ -15,11 +15,11 @@ int main(){
 
         cin>>num;
 
-        if(num%2==0)
-                cout<<"El numero "<<num<<" es par"<<endl;
-        else
-                cout<<"El numero "<<num<<" es impar"<<endl;
+        //La condicion creada en el anterio commit se puede simplificar con el operador ternario.
 
-        return 0;
+        string resultado = (num%2==0) ? " es par" : " es impar";        //El operador ternario es una estructura de control que permite simplificar la estructura if-else, es decir, es una estructura de control que permite evaluar una condicion y ejecutar un codigo u otro en funcion del resultado de la evaluacion de la condicion.
+                                                                        // A diferencia de if no es una sentencia si uno una expresion que permite almacenar el resultado en una variable.
+                                                                        //La sintaxis es la siguiente: (condicion) ? si es verdadero : si es falso
+        cout<<"El numero "<<num<<resultado<<endl;
 
 }
