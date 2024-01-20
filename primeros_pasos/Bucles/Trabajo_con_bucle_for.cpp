@@ -18,7 +18,7 @@ int main(){
        for (int j = 0; j < 3; j++) //El bucle for se puede anidar, es decir, se puede poner un bucle for dentro de otro bucle for
        {
            cout<<"La edad de la fila "<<j<<" y la columna "<<i<<" es: "<<edades[j][i]<<endl;
-       } //Por cada iteracion del bucle for inicial este bucle for se ejecutara 3 veces
+       } //Por cada iteracion del bucle for inicial este bucle for se ejecutara 3 veces.
     }
 
     return 0;
