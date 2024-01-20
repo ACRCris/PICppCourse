@@ -9,7 +9,8 @@ using namespace std;
 
 int main(){
     
-    int opcion;
+    int opcion; // El ambito de esta variable es el main, no se puede acceder a ella desde fuera pero si desde de cualquier estructura de control dentro del main commo el switch
+                
 
     cout<<"Menu de opciones"<<endl;
 
@@ -29,11 +30,11 @@ int main(){
 
         case 2: 
 
-                int a, b, suma;
-
+                int a, b;   //Al igual que con la variable opcion, el ambito de estas variables es el main, no se puede acceder a ellas desde fuera pero si desde de cualquier estructura de control dentro del main commo el switch
+                            //El ambito de esta variable NO esta determinado por la estructura switch-case.
                 cout<<"Introduce dos numeros: "<<endl;
 
-                cin>>a>>b; //Introduccion por consola de dos numeros enteros a y b, con el operador >> se puede introducir varios valores en una misma linea
+                cin>>a>>b; //Introduccion por consola de dos numeros enteros a y b, con el operador >> se puede introducir varios valores en una misma linea.
 
                 cout<<"La suma de "<<a<<" y "<<b<<" es "<<a+b<<endl;    
 
@@ -46,5 +47,7 @@ int main(){
         default: 
                 cout<<"Opcion no valida"<<endl;
     }
+
+    return 0;
 
 }
