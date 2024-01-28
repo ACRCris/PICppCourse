@@ -10,18 +10,23 @@ using namespace std;
 
 int main(){
     
-    int i {1};
+    int num,suma=0; //Declaracion e inicializacion de dos variables de tipo entero en una misma linea
 
-    while (i <= 10) //El bucle while es bucle indeterminado, es decir, no se sabe cuantas veces se va a ejecutar el bucle
-    {
-        if(i % 2 == 0){ //Si el resto de la division de i entre 2 es 0, es decir, si i es par
-            
-            cout<<"El numero "<<i<<" es par"<<endl;
-        }
+    cout<<"Introduce un numero (0 para salir): "<<endl;
+
+    cin>>num;
+
+    while (num != 0){
         
-        i++; //Incrementa el valor de i en 1
+        suma += num; //suma = suma + num;
 
+        cout<<"Introduce un numero (0 para salir): "<<endl;
+
+        cin>>num;
     }
+    
+    cout<<"La suma total es: "<<suma<<endl;
+
     
     return 0;
 }
