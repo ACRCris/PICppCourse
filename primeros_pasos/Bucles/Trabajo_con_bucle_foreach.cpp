@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 /*
@@ -9,16 +10,24 @@ using namespace std;
 
 int main(){
     
-    string email = "juan@pildorasinformaticas.es";
+    vector<int> numeros;
+    int num;
 
-    for(auto s:email){  //La sintaxis del bucle for each es la siguiente: for (tipo_de_dato variable:array) {codigo a ejecutar}
-                        //La palabra reservada auto se utiliza para usar la inferencia de tipos del compilador.
-        if(s == '@'){
-            cout<<"En contre la @";
-        }
+    cout<<"Introduce varios numeros. Escribe 0 para salir"<<endl;                        
+    
+    while (cin>> num && num != 0){  //El bucle while es bucle indeterminado, es decir, no se sabe cuantas veces se va a ejecutar el bucle
+                                    //La condicion evaluar es si se pudo almacenar la variable con cin>> num y si esta es diferente de 0
+        numeros.push_back(num);   
     }
-                        
-   
+
+    cout<<"Has introducido los siguientes numeros: "<<endl;
+
+    for (int n : numeros) { //foreach es un bucle determinado, es decir, se sabe cuantas veces se va a ejecutar el bucle
+        
+        cout<<n<<endl;
+
+    }
+    
     
     return 0;
 }
