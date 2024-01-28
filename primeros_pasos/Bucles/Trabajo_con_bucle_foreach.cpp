@@ -9,11 +9,13 @@ using namespace std;
 
 int main(){
     
-    double salario[] = {1500.25,2500.50}; //Declaracion e inicializacion de un array de tipo entero.
+    string email = "juan@pildorasinformaticas.es";
 
-    for(auto s:salario){    //La sintaxis del bucle for each es la siguiente: for (tipo_de_dato variable:array) {codigo a ejecutar}
-                            //La palabra reservada auto se utiliza para usar la inferencia de tipos del compilador.
-        cout<<s<<endl;   
+    for(auto s:email){  //La sintaxis del bucle for each es la siguiente: for (tipo_de_dato variable:array) {codigo a ejecutar}
+                        //La palabra reservada auto se utiliza para usar la inferencia de tipos del compilador.
+        if(s == '@'){
+            cout<<"En contre la @";
+        }
     }
                         
    
