@@ -9,11 +9,11 @@ using namespace std;
 
 int main(){
     
-    int edades[] = {25,35,80.50,27}; //Declaracion e inicializacion de un array de tipo entero.
+    double salario[] = {1500.25,2500.50}; //Declaracion e inicializacion de un array de tipo entero.
 
-    for(int edad:edades){   //La sintaxis del bucle for each es la siguiente: for (tipo_de_dato variable:array) {codigo a ejecutar}
-                            //perdemos la informacion de la posicion del array, solo podemos acceder al valor de cada elemento del array.
-        cout<<edad<<endl;   
+    for(auto s:salario){    //La sintaxis del bucle for each es la siguiente: for (tipo_de_dato variable:array) {codigo a ejecutar}
+                            //La palabra reservada auto se utiliza para usar la inferencia de tipos del compilador.
+        cout<<s<<endl;   
     }
                         
    
